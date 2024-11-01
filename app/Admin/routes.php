@@ -20,6 +20,6 @@ Route::group([
     $router->get('/', 'HomeController@index')->name('home');
     $router->resource('productos', ProductoController::class);
     $router->resource('categorias', CategoriaController::class);
-    $router->resource('proveedores', ProveedorController::class);
+    $router->resource('proveedors', ProveedorController::class);
     $router->resource('clientes', ClienteController::class);
 });

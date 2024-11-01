@@ -29,11 +29,21 @@ return [
     */
 
     'disks' => [
-        'admin'=> [
+        //Configuracion simple
+
+        /*'admin'=> [
             'driver'=> 'local',
             'root'=> storage_path('app')
 
+        //Configuracion para imagenes
+        ],*/
+        'admin'=> [
+            'driver'=> 'local',
+            'root'=> public_path('uploads'),
+            'visibility'=> 'public',
+            'url' => env('APP_URL').'/uploads'
         ],
+
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app'),
