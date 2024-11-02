@@ -32,7 +32,7 @@ class ProductoController extends AdminController
         $grid->column('precio', __('Precio'));
         $grid->column('stock', __('Stock'));
         //$grid->column('imagen', __('Imagen'));
-        $grid->column('imagen')->imagenes();
+        $grid->column('imagen')->image();
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
 
